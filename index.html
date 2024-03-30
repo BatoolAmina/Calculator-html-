@@ -9,41 +9,41 @@
 <body>
 
     <div class="Calculator">
-        <h1>My Calculator....</h1>
+        <h1>Calculator</h1>
         <div>
-      <input type="text" id="input">
+      <input type="text" id="result">
       </div>
       <div class="container">
         <div>
-            <button>AC</button>
-            <button>DEL</button>
-            <button class="operators">/</button>
-            <button class="operators">%</button>
+            <button class="red" onclick="clearResult()">AC</button>
+            <button class="del" onclick="backspace()">DEL</button>
+            <button class="primary" onclick="appendToResult('%')">%</button>
+            <button class="primary" onclick="appendToResult('/')">/</button>
         </div>
         <div>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="operators">*</button>
+            <button class="light" onclick="appendToResult('7')">7</button>
+            <button class="light" onclick="appendToResult('8')">8</button>
+            <button class="light" onclick="appendToResult('9')">9</button>
+            <button class="primary" onclick="appendToResult('*')">*</button>
         </div>
         <div>
-            <button>6</button>
-            <button>5</button>
-            <button>4</button>
-            <button class="operators">-</button>
+            <button class="light" onclick="appendToResult('6')">6</button>
+            <button class="light" onclick="appendToResult('5')">5</button>
+            <button class="light" onclick="appendToResult('4')">4</button>
+            <button class="primary" onclick="appendToResult('-')">-</button>
         </div>
         <div>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="operators">+</button>
+            <button class="light" onclick="appendToResult('3')">3</button>
+            <button class="light" onclick="appendToResult('2')">2</button>
+            <button class="light" onclick="appendToResult('1')">1</button>
+            <button class="primary" onclick="appendToResult('+')">+</button>
         </div>
         <div>
             
-            <button>0</button>
-            <button>00</button>
-            <button>.</button>
-            <button class="Equals">=</button>
+            <button class="light" onclick="appendToResult('0')">0</button>
+            <button class="light" onclick="appendToResult('00')">00</button>
+            <button class="light" onclick="appendToResult('.')">.</button>
+            <button class="equal" onclick="calculate()">=</button>
         </div>
     </div>
 </div> 
