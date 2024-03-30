@@ -1,23 +1,26 @@
-let string = ""
-let buttons = document.querySelectorAll('button');
-Array.from(buttons).forEach ((button) =>{
-    button.addEventListener('click',(e)=>{
-    if(e.target.innerHTML  == '='){
-        string=eval(string);
-        document.querySelector('input').value=string;
+function appendToResult(value) 
+{
+    document.getElementById("result").value += value;
+}
+  
+function clearResult() 
+{
+    document.getElementById("result").value = " ";
+}
+  
+function calculate() 
+{
+    try 
+    {
+        document.getElementById("result").value = eval(document.getElementById("result").value);
+    } catch (error) {
+        document.getElementById("result").value = "Error";
     }
-    else if(e.target.innerHTML  == 'AC'){
-        string=" ";
-        document.querySelector('input').value=string;
-    }
-    else if(e.target.innerHTML == 'DEL'){
-        string=string.slice(0,-1);
-        document.querySelector('input').value=string;
-    }
-    else{
-        console.log(e.target)
-        string = string+e.target.innerHTML;
-        document.querySelector('input').value=string;
-    }
-})
-})
+}
+  
+function backspace() 
+{
+    var result = document.getElementById("result").value;
+    document.getElementById("result").value = result.substring(0, result.length - 1);
+}
+  
