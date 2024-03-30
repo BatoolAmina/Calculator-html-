@@ -1,7 +1,5 @@
 body{
-    margin-top: 12%;
-    background-color: rgb(243, 238, 238);
-    color: blue;
+    margin-top: 130px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -13,27 +11,16 @@ body{
    text-align: center;
 }
 button{
-    width: 80px;
+    width: 60px;
     height: 50px;
     margin-top: 5px;
-    border-radius: 20%;
+    border-radius: 10px;
     text-align: center;
-    background-color: rgb(112, 110, 110);
-    color: blue;
     font-size: 18px;
-}
-.Equals{
-    width: 165px;
-    background-color:blue;
-    color: white;
-}
-.operators{
-    background-color: blue;
-    color: white;
+    border: none;
 }
 input{
-    height: 60px;
-    width: 330px;
+    height: 40px;
     margin-top: 10px;
     font-size: 20px;
 }
@@ -44,4 +31,27 @@ input{
     padding: 10px;
     height: 450px;
     color: white;
+}
+
+.red{
+    background-color: red;
+    color: white;
+}
+.primary{
+    background-color: #4092ad;
+    color: white;
+}
+
+.equal{
+    background-color: #0303ff;
+    color: white;
+}
+
+.del{
+    background-color: crimson;
+    color: white;
+}
+
+.light{
+    background-color: antiquewhite;
 }
