@@ -6,6 +6,7 @@ body{
     align-items: center;
 }
 .container{
+    border-radius: 20px
     margin:20px;
    /* background-color: rgb(78, 91, 86); */
    text-align: center;
